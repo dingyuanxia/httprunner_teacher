@@ -1,0 +1,282 @@
+[32m2020-07-28 10:48:19.467[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: request methods testcase: reference testcase, TestCase ID: 1bb936f8-be3b-461e-b52b-338b999559f2[0m
+[32m2020-07-28 10:48:19.468[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: request with functions >>>>>>[0m
+[32m2020-07-28 10:48:19.469[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: get with params >>>>>>[0m
+[32m2020-07-28 10:48:23.031[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 59037[0m
+[32m2020-07-28 10:48:23.032[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 34.206.86.219, Port: 443[0m
+[32m2020-07-28 10:48:23.033[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : https://postman-echo.com/get?foo1=bar11&foo2=bar21&sum_v=3
+headers  : {
+    "User-Agent": "HttpRunner/3.1.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-499469"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2020-07-28 10:48:23.034[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 28 Jul 2020 02:48:22 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "421",
+    "Connection": "keep-alive",
+    "ETag": "W/\"1a5-hHNkBYsmbaZK6QUAkzUKSOVj0a8\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3AUU9ajpEwzsHB2k11u1UNAozrGcepf3zV.9ZOmMxgF4wnYHO49HLLDZ28FhVLZBbuLOhFx7IIR4pw; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3AUU9ajpEwzsHB2k11u1UNAozrGcepf3zV.9ZOmMxgF4wnYHO49HLLDZ28FhVLZBbuLOhFx7IIR4pw"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {
+        "foo1": "bar11",
+        "foo2": "bar21",
+        "sum_v": "3"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5f1f91f6-6ea9199154289876013a7bfd",
+        "user-agent": "HttpRunner/3.1.3",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "hrun-request-id": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-499469"
+    },
+    "url": "https://postman-echo.com/get?foo1=bar11&foo2=bar21&sum_v=3"
+}
+[0m
+[32m2020-07-28 10:48:23.034[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 3561.85 ms, response_length: 0 bytes[0m
+[32m2020-07-28 10:48:23.035[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'foo3': 'bar21'}[0m
+[32m2020-07-28 10:48:23.035[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2020-07-28 10:48:23.036[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.args.foo1 equal bar11(str)	==> pass[0m
+[32m2020-07-28 10:48:23.036[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.args.sum_v equal 3(str)	==> pass[0m
+[32m2020-07-28 10:48:23.036[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.args.foo2 equal bar21(str)	==> pass[0m
+[32m2020-07-28 10:48:23.037[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: get with params <<<<<<
+[0m
+[32m2020-07-28 10:48:23.037[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: post raw text >>>>>>[0m
+[32m2020-07-28 10:48:23.248[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 59037[0m
+[32m2020-07-28 10:48:23.249[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 34.206.86.219, Port: 443[0m
+[32m2020-07-28 10:48:23.250[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "text/plain",
+    "HRUN-Request-ID": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-503038",
+    "Cookie": "sails.sid=s%3AUU9ajpEwzsHB2k11u1UNAozrGcepf3zV.9ZOmMxgF4wnYHO49HLLDZ28FhVLZBbuLOhFx7IIR4pw",
+    "Content-Length": "83"
+}
+cookies  : {
+    "sails.sid": "s%3AUU9ajpEwzsHB2k11u1UNAozrGcepf3zV.9ZOmMxgF4wnYHO49HLLDZ28FhVLZBbuLOhFx7IIR4pw"
+}
+body     : This is expected to be sent back as part of response body: bar12-config_bar2-bar21.
+[0m
+[32m2020-07-28 10:48:23.251[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 28 Jul 2020 02:48:23 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "629",
+    "Connection": "keep-alive",
+    "ETag": "W/\"275-yFNJZMoRzJ3QvwNrISGKtaMBrzo\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3AOKSpblO2_4BrxAJLwr4uGdJim9t5PO5G.etXxosLCoG4KRoLr158YPKZQcOClh%2FYtdYoYINsLFAo; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3AOKSpblO2_4BrxAJLwr4uGdJim9t5PO5G.etXxosLCoG4KRoLr158YPKZQcOClh%2FYtdYoYINsLFAo"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "This is expected to be sent back as part of response body: bar12-config_bar2-bar21.",
+    "files": {},
+    "form": {},
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5f1f91f7-06a744f95ce5bea1a48db9c1",
+        "content-length": "83",
+        "user-agent": "HttpRunner/3.1.3",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "text/plain",
+        "hrun-request-id": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-503038",
+        "cookie": "sails.sid=s%3AUU9ajpEwzsHB2k11u1UNAozrGcepf3zV.9ZOmMxgF4wnYHO49HLLDZ28FhVLZBbuLOhFx7IIR4pw"
+    },
+    "json": null,
+    "url": "https://postman-echo.com/post"
+}
+[0m
+[32m2020-07-28 10:48:23.251[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 210.47 ms, response_length: 0 bytes[0m
+[32m2020-07-28 10:48:23.251[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2020-07-28 10:48:23.252[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.data equal This is expected to be sent back as part of response body: bar12-config_bar2-bar21.(str)	==> pass[0m
+[32m2020-07-28 10:48:23.252[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: post raw text <<<<<<
+[0m
+[32m2020-07-28 10:48:23.253[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: post form data >>>>>>[0m
+[32m2020-07-28 10:48:23.463[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 59037[0m
+[32m2020-07-28 10:48:23.464[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 34.206.86.219, Port: 443[0m
+[32m2020-07-28 10:48:23.464[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "HRUN-Request-ID": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-503253",
+    "Cookie": "sails.sid=s%3AOKSpblO2_4BrxAJLwr4uGdJim9t5PO5G.etXxosLCoG4KRoLr158YPKZQcOClh%2FYtdYoYINsLFAo",
+    "Content-Length": "44"
+}
+cookies  : {
+    "sails.sid": "s%3AOKSpblO2_4BrxAJLwr4uGdJim9t5PO5G.etXxosLCoG4KRoLr158YPKZQcOClh%2FYtdYoYINsLFAo"
+}
+body     : foo1=testcase_ref_bar1&foo2=bar23&foo3=bar21
+[0m
+[32m2020-07-28 10:48:23.465[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 28 Jul 2020 02:48:23 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "681",
+    "Connection": "keep-alive",
+    "ETag": "W/\"2a9-612CmPft/EbjVCku0pPTfn6A3FE\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3ADYzM9aYbj1-ByRcHNfsbV-arAkZH_I2n.2XWVjxdwy4wbWpthjtkgEqiPl%2B0CrEge0tj8aRSyeRk; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3ADYzM9aYbj1-ByRcHNfsbV-arAkZH_I2n.2XWVjxdwy4wbWpthjtkgEqiPl%2B0CrEge0tj8aRSyeRk"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "foo1": "testcase_ref_bar1",
+        "foo2": "bar23",
+        "foo3": "bar21"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5f1f91f7-4ce855d32a121d30e65f22d8",
+        "content-length": "44",
+        "user-agent": "HttpRunner/3.1.3",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded",
+        "hrun-request-id": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-503253",
+        "cookie": "sails.sid=s%3AOKSpblO2_4BrxAJLwr4uGdJim9t5PO5G.etXxosLCoG4KRoLr158YPKZQcOClh%2FYtdYoYINsLFAo"
+    },
+    "json": {
+        "foo1": "testcase_ref_bar1",
+        "foo2": "bar23",
+        "foo3": "bar21"
+    },
+    "url": "https://postman-echo.com/post"
+}
+[0m
+[32m2020-07-28 10:48:23.466[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 209.85 ms, response_length: 0 bytes[0m
+[32m2020-07-28 10:48:23.466[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2020-07-28 10:48:23.467[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.form.foo1 equal testcase_ref_bar1(str)	==> pass[0m
+[32m2020-07-28 10:48:23.467[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.form.foo2 equal bar23(str)	==> pass[0m
+[32m2020-07-28 10:48:23.467[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.form.foo3 equal bar21(str)	==> pass[0m
+[32m2020-07-28 10:48:23.468[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: post form data <<<<<<
+[0m
+[32m2020-07-28 10:48:23.468[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step_testcase[0m:[36m286[0m - [1mexport variables: {'foo3': 'bar21'}[0m
+[32m2020-07-28 10:48:23.468[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: request with functions <<<<<<
+[0m
+[32m2020-07-28 10:48:23.469[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: post form data >>>>>>[0m
+[32m2020-07-28 10:48:23.679[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 59037[0m
+[32m2020-07-28 10:48:23.680[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 34.206.86.219, Port: 443[0m
+[32m2020-07-28 10:48:23.680[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "HRUN-Request-ID": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-503469",
+    "Cookie": "sails.sid=s%3ADYzM9aYbj1-ByRcHNfsbV-arAkZH_I2n.2XWVjxdwy4wbWpthjtkgEqiPl%2B0CrEge0tj8aRSyeRk",
+    "Content-Length": "20"
+}
+cookies  : {
+    "sails.sid": "s%3ADYzM9aYbj1-ByRcHNfsbV-arAkZH_I2n.2XWVjxdwy4wbWpthjtkgEqiPl%2B0CrEge0tj8aRSyeRk"
+}
+body     : foo1=bar1&foo2=bar21
+[0m
+[32m2020-07-28 10:48:23.683[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 28 Jul 2020 02:48:23 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "625",
+    "Connection": "keep-alive",
+    "ETag": "W/\"271-Xj/HIZnYAT1KDme2RrY2EhtMZ4w\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3A0j3prmr_TC7P_KuH6TIqJnP2noqTCOeB.SnhTcfgqgu%2B683SmU43u83GhfGSQ4qqwNB1MzoSSiyg; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3A0j3prmr_TC7P_KuH6TIqJnP2noqTCOeB.SnhTcfgqgu%2B683SmU43u83GhfGSQ4qqwNB1MzoSSiyg"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "foo1": "bar1",
+        "foo2": "bar21"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5f1f91f7-2624882c3c3abe43e4938196",
+        "content-length": "20",
+        "user-agent": "HttpRunner/3.1.3",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded",
+        "hrun-request-id": "HRUN-1bb936f8-be3b-461e-b52b-338b999559f2-503469",
+        "cookie": "sails.sid=s%3ADYzM9aYbj1-ByRcHNfsbV-arAkZH_I2n.2XWVjxdwy4wbWpthjtkgEqiPl%2B0CrEge0tj8aRSyeRk"
+    },
+    "json": {
+        "foo1": "bar1",
+        "foo2": "bar21"
+    },
+    "url": "https://postman-echo.com/post"
+}
+[0m
+[32m2020-07-28 10:48:23.683[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 209.87 ms, response_length: 0 bytes[0m
+[32m2020-07-28 10:48:23.684[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2020-07-28 10:48:23.684[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.form.foo1 equal bar1(str)	==> pass[0m
+[32m2020-07-28 10:48:23.684[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.form.foo2 equal bar21(str)	==> pass[0m
+[32m2020-07-28 10:48:23.684[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: post form data <<<<<<
+[0m
+[32m2020-07-28 10:48:23.685[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/heweimao/丁元霞/0713/httprunner直播/demo/logs/1bb936f8-be3b-461e-b52b-338b999559f2.run.log[0m

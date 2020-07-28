@@ -1,0 +1,3 @@
+2020-07-28 10:13:42.430 | INFO     | httprunner.runner:test_start:451 - Start to run testcase: testcase description, TestCase ID: 0f439326-b4a8-4034-9e64-53ef8a5155c9
+2020-07-28 10:13:42.431 | INFO     | httprunner.runner:__run_step:292 - run step begin: login mubu >>>>>>
+2020-07-28 10:13:42.431 | INFO     | httprunner.runner:__run_step:292 - run step begin: / >>>>>>
